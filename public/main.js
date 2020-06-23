@@ -1,4 +1,5 @@
 const ws = new WebSocket(`ws://localhost:3000`);
+const notification = new Notification('A new user has connected!');
 
 const username = prompt('Username');
 const usernameEl = document.createElement('p');
