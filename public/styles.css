@@ -31,6 +31,10 @@ input {
   overflow-y: scroll;
 }
 
+#username {
+  text-align: center;
+}
+
 #controls {
   display: flex;
   width: 300px;

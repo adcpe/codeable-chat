@@ -1,6 +1,9 @@
 const ws = new WebSocket(`ws://localhost:3000`);
 
 const username = prompt('Username');
+const usernameEl = document.createElement('p');
+usernameEl.innerHTML = `Connected as ${username}`;
+document.getElementById('username').prepend(usernameEl);
 
 const generateDate = () => {
   return new Date().toLocaleTimeString('en-US', {
